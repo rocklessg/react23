@@ -12,6 +12,7 @@ import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
 import NameList from './components/NameList';
 import Form from './components/Form';
+import LifecycleA from './components/LifecycleA';
 
 // function App() {
 //   return (
@@ -41,7 +42,8 @@ class App extends Component {
   render() {
     return(
       <div className="App">
-        < Form />
+        < LifecycleA />
+        {/* < Form /> */}
         {/* < NameList /> */}
         {/* < UserGreeting /> */}
         {/* < ParentComponent /> */}
