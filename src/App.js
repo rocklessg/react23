@@ -1,18 +1,21 @@
-//import logo from './logo.svg';
-import { Component } from 'react';
-import './App.css';
-import Greet from './components/Greet';
-import Hello from './components/Hello.js';
-import Message from './components/Message';
-import Counter from './components/Counter';
+//import logo from './logo.svg'
+import { Component } from 'react'
+import './App.css'
+import Greet from './components/Greet'
+import Hello from './components/Hello.js'
+import Message from './components/Message'
+import Counter from './components/Counter'
 import FunctionClick from './components/FunctionClick'
-import ClassClick from './components/ClassClick';
-import EventBind from './components/EventBind';
-import ParentComponent from './components/ParentComponent';
-import UserGreeting from './components/UserGreeting';
-import NameList from './components/NameList';
-import Form from './components/Form';
-import LifecycleA from './components/LifecycleA';
+import ClassClick from './components/ClassClick'
+import EventBind from './components/EventBind'
+import ParentComponent from './components/ParentComponent'
+import UserGreeting from './components/UserGreeting'
+import NameList from './components/NameList'
+import Form from './components/Form'
+import LifecycleA from './components/LifecycleA'
+import FragmentDemo from './components/FragmentDemo'
+import Table from './components/Table'
+import ParentComp from './components/ParentComp'
 
 // function App() {
 //   return (
@@ -36,20 +39,23 @@ import LifecycleA from './components/LifecycleA';
       
 //       {/* < Hello /> */}
 //     </div>
-//   );
+//   )
 // }
 class App extends Component {
   render() {
     return(
       <div className="App">
-        < LifecycleA />
+        < ParentComp />
+        {/* < FragmentDemo /> */}
+        {/* < Table /> */}
+        {/* < LifecycleA /> */}
         {/* < Form /> */}
         {/* < NameList /> */}
         {/* < UserGreeting /> */}
         {/* < ParentComponent /> */}
         {/* < EventBind /> */}
-        {/* < FunctionClick />
-        < ClassClick /> */}
+        {/* < FunctionClick /> */}
+        {/* < ClassClick /> */}
         {/* < Greet name="Al-amin" heroname="Abdulhafiz" /> */}
         {/* <Message /> */}
         {/* < Counter /> */}
@@ -60,4 +66,4 @@ class App extends Component {
   
 }
 
-export default App;
+export default App
