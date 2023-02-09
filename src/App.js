@@ -1,21 +1,23 @@
-//import logo from './logo.svg'
-import { Component } from 'react'
-import './App.css'
-import Greet from './components/Greet'
-import Hello from './components/Hello.js'
-import Message from './components/Message'
-import Counter from './components/Counter'
-import FunctionClick from './components/FunctionClick'
-import ClassClick from './components/ClassClick'
-import EventBind from './components/EventBind'
-import ParentComponent from './components/ParentComponent'
-import UserGreeting from './components/UserGreeting'
-import NameList from './components/NameList'
-import Form from './components/Form'
-import LifecycleA from './components/LifecycleA'
-import FragmentDemo from './components/FragmentDemo'
-import Table from './components/Table'
-import ParentComp from './components/ParentComp'
+//import logo from "./logo.svg"
+import { Component } from "react"
+import "./App.css"
+import Greet from "./components/Greet"
+import Hello from "./components/Hello.js"
+import Message from "./components/Message"
+import Counter from "./components/Counter"
+import FunctionClick from "./components/FunctionClick"
+import ClassClick from "./components/ClassClick"
+import EventBind from "./components/EventBind"
+import ParentComponent from "./components/ParentComponent"
+import UserGreeting from "./components/UserGreeting"
+import NameList from "./components/NameList"
+import Form from "./components/Form"
+import LifecycleA from "./components/LifecycleA"
+import FragmentDemo from "./components/FragmentDemo"
+import Table from "./components/Table"
+import ParentComp from "./components/ParentComp"
+import Hero from "./components/Hero"
+import ErrorBoundary from "./components/ErrorBoundary"
 
 // function App() {
 //   return (
@@ -45,7 +47,19 @@ class App extends Component {
   render() {
     return(
       <div className="App">
-        < ParentComp />
+        < ErrorBoundary>
+          < Hero heroName="Batman" />
+        </ErrorBoundary>
+
+        < ErrorBoundary>
+          < Hero heroName="Superman" />
+        </ErrorBoundary>
+
+        < ErrorBoundary>
+          < Hero heroName="Joker" /> 
+        </ErrorBoundary>
+        
+        {/* < ParentComp /> */}
         {/* < FragmentDemo /> */}
         {/* < Table /> */}
         {/* < LifecycleA /> */}
