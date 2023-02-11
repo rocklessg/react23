@@ -18,6 +18,7 @@ import Table from "./components/Table"
 import ParentComp from "./components/ParentComp"
 import Hero from "./components/Hero"
 import ErrorBoundary from "./components/ErrorBoundary"
+import ClickCounter from "./components/ClickCounter"
 
 // function App() {
 //   return (
@@ -47,7 +48,10 @@ class App extends Component {
   render() {
     return(
       <div className="App">
-        < ErrorBoundary>
+
+      < ClickCounter />
+
+        {/* < ErrorBoundary>
           < Hero heroName="Batman" />
         </ErrorBoundary>
 
@@ -57,7 +61,7 @@ class App extends Component {
 
         < ErrorBoundary>
           < Hero heroName="Joker" /> 
-        </ErrorBoundary>
+        </ErrorBoundary> */}
         
         {/* < ParentComp /> */}
         {/* < FragmentDemo /> */}
