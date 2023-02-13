@@ -19,6 +19,7 @@ import ParentComp from "./components/ParentComp"
 import Hero from "./components/Hero"
 import ErrorBoundary from "./components/ErrorBoundary"
 import ClickCounter from "./components/ClickCounter"
+import HooverCounter from "./components/HooverCounter"
 
 // function App() {
 //   return (
@@ -50,6 +51,7 @@ class App extends Component {
       <div className="App">
 
       < ClickCounter />
+      < HooverCounter />
 
         {/* < ErrorBoundary>
           < Hero heroName="Batman" />
