@@ -20,6 +20,8 @@ import Hero from "./components/Hero"
 import ErrorBoundary from "./components/ErrorBoundary"
 import ClickCounter from "./components/ClickCounter"
 import HooverCounter from "./components/HooverCounter"
+import User from "./components/User"
+import Counters from "./components/Counters"
 
 // function App() {
 //   return (
@@ -50,8 +52,12 @@ class App extends Component {
     return(
       <div className="App">
 
-      < ClickCounter />
+        < Counters render={ (count, incrementCount) => (< Counter count={count} incrementCount={incrementCount}/> )} />
+        < Counters render={ (count, incrementCount) => (< HooverCounter count={count} incrementCount={incrementCount}/> )} />
+
+      {/* < ClickCounter />
       < HooverCounter />
+      < User render={(isLoggedIn) => isLoggedIn ? 'Abdulhafiz' : 'Guest'} /> */}
 
         {/* < ErrorBoundary>
           < Hero heroName="Batman" />
