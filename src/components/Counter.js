@@ -11,7 +11,7 @@ class Counter extends Component {
   // }
 
   // incrementCount() {
-  //   // this.setState({ 
+  //   // this.setState({
   //   //   count: this.state.count + 1
   //   // })
   //   this.setState(

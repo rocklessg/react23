@@ -22,6 +22,8 @@ import ClickCounter from "./components/ClickCounter"
 import HooverCounter from "./components/HooverCounter"
 import User from "./components/User"
 import Counters from "./components/Counters"
+import ComponentC from "./components/ComponentC"
+import { UserProvider } from "./components/userContext"
 
 // function App() {
 //   return (
@@ -51,9 +53,12 @@ class App extends Component {
   render() {
     return(
       <div className="App">
-
-        < Counters render={ (count, incrementCount) => (< Counter count={count} incrementCount={incrementCount}/> )} />
-        < Counters render={ (count, incrementCount) => (< HooverCounter count={count} incrementCount={incrementCount}/> )} />
+        
+        <UserProvider value="Abdulhafiz">
+          < ComponentC />          
+        </UserProvider>
+        {/* < Counters render={ (count, incrementCount) => (< Counter count={count} incrementCount={incrementCount}/> )} />
+        < Counters render={ (count, incrementCount) => (< HooverCounter count={count} incrementCount={incrementCount}/> )} /> */}
 
       {/* < ClickCounter />
       < HooverCounter />
